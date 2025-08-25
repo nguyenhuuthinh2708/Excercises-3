@@ -49,7 +49,7 @@ namespace ConsoleApp1
                 }
                 // 2. Bắt đầu:              
                 Random rd = new Random();
-                int maychon = rd.Next(0, 101);
+                int maychon = rd.Next(1, 101);
                 bool thang = false;
                 for (int i = 0; i < solanchoi; i++)
                 {
@@ -111,3 +111,4 @@ namespace ConsoleApp1
         } 
     }
 }
+
