@@ -25,7 +25,7 @@ namespace ConsoleApp1
                     Console.WriteLine("Tài khoản của bạn đã hết. Bạn không thể tiếp tục chơi");
                     break;
                 }
-                //1. Khởi đông:
+                //2. Khởi đông:
                 Console.WriteLine("Mời bạn chọn level: \n\t1. Khó: 4 lần chơi\n\t2. Trung bình: 7 lần chơi\n\t3. Dễ: 10 lần chơi");               
                 string s = Console.ReadLine();
                 int level = 0;
@@ -53,7 +53,7 @@ namespace ConsoleApp1
                         cash = 10;
                         break;
                 }
-                // 2. Bắt đầu:              
+                // 3. Bắt đầu:              
                 Random rd = new Random();
                 int maychon = rd.Next(1, 101);
                 bool thang = false;
@@ -91,7 +91,7 @@ namespace ConsoleApp1
                     vanthua++;
                 }
                 
-                //3. Hỏi người chơi:
+                //4. Hỏi người chơi:
                 Console.Write("\nBạn có muốn chơi lại không ? (c/k) ");
                 string tl = Console.ReadLine();
                 if (tl.ToLower().Equals("k"))
@@ -100,7 +100,7 @@ namespace ConsoleApp1
                     break ;
                 }
             } while (true);
-            // 4. Thống kê:
+            // 5. Thống kê:
             Console.WriteLine(new string('-', 40));
             Console.WriteLine("Chúc mừng bạn đã hoàn thành trò chơi:");
             Console.WriteLine($"Số tiền còn lại trong tài khoản {tk}");
@@ -113,3 +113,4 @@ namespace ConsoleApp1
         } 
     }
 }
+
